@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'Geologica Thin';
+    src: url("fonts/Geologica.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'Geologica Regular';
+    src: url("fonts/Geologica_Regular.ttf") format("truetype");
+}
+body{
+    background: white;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+hr {
+    height: 20px;
+    margin: 0 auto;
+    width: 70%;
+    background-image: radial-gradient(farthest-side at 50% -50%, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    position: relative;
+    border: none;
+}
+hr:before {
+    height: 1px;
+    position: absolute;
+    top: -1px;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75) 50%, rgba(0, 0, 0, 0));
+}
+#icon{
+    margin: -30px;
+}
+.header{
+    flex: 1 0 auto;
+}
+.main {
+  flex: 20 auto;
+}
+.telegram{
+    font-size: 22px;
+    float: right;
+}
+.copyright{
+    float: left;
+}
+#text{
+    font-family: 'Geologica Thin', sans-serif;
+    font-size: 32px;
+    color: #47474f;
+    padding: 50px 0;
+}
+footer {
+    font-family: 'Geologica Thin', sans-serif;
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+}
+
+.floating-button {
+  text-decoration: none;
+  display: inline-block;
+  width: 300px;
+  height: 80px;
+  line-height: 75px;
+  border-radius: 25px;
+  margin: 10px 20px;
+  font-family: 'Geologica Regular', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: #524f4e;
+  background: white;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+  transition: .3s;
+}
+.floating-button:hover {
+  background: #bd060a;
+  box-shadow: 0 15px 20px #e5322d;
+  color: white;
+  transform: translateY(-7px);
+}

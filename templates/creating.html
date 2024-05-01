@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="{% static "css/creating.css" %}" />
+    <meta charset="UTF-8">
+    <title>Django Фото в PDF</title>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <a href="/"><img id="icon" src="static/icons/site_icon.png" alt="PhotoToPDF" height="150"></a>
+            <hr>
+        </nav>
+    </header>
+    <div class="main">
+        <div class="work_area" style="display: flex; justify-content: center; flex-wrap: wrap">
+            {% for uploaded_file in uploaded_files %}
+                <div class="picture">
+                    <center><img src="{{ uploaded_file.file.url }}" width="150" alt="{{ uploaded_file.file.name }}"></center>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    <footer>
+        <div class="copyright">© PhotoToPDF 2024 ® - Test Proejct</div>
+        <div class="telegram">
+            <a href="https://t.me/includetwitch"><img src="static/icons/tg_logo.svg" height="30" alt="Telegram"></a>
+        </div>
+    </footer>
+</body>
+</html>
