@@ -16,7 +16,9 @@ Including another URLconf
 """
 from django.conf import settings
 from django.conf.urls.static import static
-from django.urls import path, re_path
+from django.template.defaulttags import url
+from django.urls import path, re_path, reverse_lazy
+from django.views.generic.base import RedirectView
 from main import views
 
 
@@ -26,6 +28,7 @@ urlpatterns = [
     re_path('upload/', views.upload_files, name='upload_files'),
     re_path(r'^creating', views.creating, name='creating'),
     path('', views.index),
+    re_path(r'^favicon\.ico$', RedirectView.as_view(url=reverse_lazy('staticfiles_url', kwargs={'path': 'icons/favicon.ico'}), permanent=True)),
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
