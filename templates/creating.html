@@ -28,22 +28,22 @@
                     <div class="option_panel_title">Ориентация страницы</div>
                     <ul class="orientation_image">
                         <li class="option_image_item">
-                            <svg width="80" height="100" viewBox="0 0 80 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin: 10px auto">
+                            <svg width="60" height="75" viewBox="0 0 80 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin: 8px auto; height: 128px">
                                 <rect x="1.5" y="1.5" width="77" height="97" rx="3.5" fill="white" stroke="#3D3D3D" stroke-width="3"></rect>
                             </svg>
-                            <div class="option_image_title">Портретная</div>
+                            <div class="option_image_title">Portrait</div>
                         </li>
                         <li class="option_image_item">
-                            <svg width="100" height="80" viewBox="0 0 100 80" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin: auto auto">
+                            <svg width="75" height="60" viewBox="0 0 100 80" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin: 8px auto; height: 128px">
                                 <rect x="98.5" y="1.5" width="77" height="97" rx="3.5" transform="rotate(90 98.5 1.5)" fill="white" stroke="#3D3D3D" stroke-width="3"></rect>
                             </svg>
-                            <div class="option_image_title">Альбомная</div>
+                            <div class="option_image_title">Landscape</div>
                         </li>
                     </ul>
                 </div>
                 <div class="panel_option">
                     <div class="option_panel_title">Размер страницы</div>
-                    <select class="input_option">
+                    <select class="input_option" style="background-image: url(static/icons/select_icon.svg)">
                         <option value="custom">Custom</option>
                         <option value="A4" selected>A4 (2480×3508px)</option>
                         <option value="A5">A5 (1748×2480px)</option>
@@ -51,32 +51,35 @@
                     </select>
                 </div>
                 <div class="panel_option">
-                    <div class="option_panel_title">Поля страницы</div>
+                    <div class="option_panel_title">Поля</div>
                     <ul class="orientation_image">
-                        <li class="option_image_item" style="margin: 8px auto">
-                            <svg width="61" height="61" viewBox="0 0 61 61" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="3.5" y="4" width="53" height="53" rx="11.5636" fill="#E5E5E5"></rect>
-                                <path d="M55.9166 35.5835L48.4466 30.2051C44.565 27.4104 39.2602 27.6992 35.705 30.8989L25.2948 40.2681C21.7396 43.4678 16.4348 43.7566 12.5532 40.9619L5.08325 35.5835M15.2499 55.9168H45.7499C51.3648 55.9168 55.9166 51.3651 55.9166 45.7502V15.2502C55.9166 9.63527 51.3648 5.0835 45.7499 5.0835H15.2499C9.63502 5.0835 5.08325 9.63527 5.08325 15.2502V45.7502C5.08325 51.3651 9.63502 55.9168 15.2499 55.9168ZM27.9583 21.6043C27.9583 25.1136 25.1134 27.9585 21.6041 27.9585C18.0948 27.9585 15.2499 25.1136 15.2499 21.6043C15.2499 18.095 18.0948 15.2502 21.6041 15.2502C25.1134 15.2502 27.9583 18.095 27.9583 21.6043Z" stroke="#3D3D3D" stroke-width="3.8125" stroke-linecap="round"></path>
+                        <li class="margin_image_item">
+                            <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin: 12px 36px 12px 36px">
+                                <rect x="4" y="3" width="48" height="49" rx="10.6909" fill="#E5E5E5"></rect>
+                                <path d="M50.4166 32.0835L43.6814 27.2341C40.1815 24.7143 35.3986 24.9747 32.1931 27.8597L22.8068 36.3073C19.6013 39.1923 14.8183 39.4527 11.3185 36.9329L4.58325 32.0835M13.7499 50.4168H41.2499C46.3125 50.4168 50.4166 46.3128 50.4166 41.2502V13.7502C50.4166 8.68755 46.3125 4.5835 41.2499 4.5835H13.7499C8.68731 4.5835 4.58325 8.68755 4.58325 13.7502V41.2502C4.58325 46.3128 8.68731 50.4168 13.7499 50.4168ZM25.2083 19.4793C25.2083 22.6435 22.6432 25.2085 19.4791 25.2085C16.315 25.2085 13.7499 22.6435 13.7499 19.4793C13.7499 16.3152 16.315 13.7502 19.4791 13.7502C22.6432 13.7502 25.2083 16.3152 25.2083 19.4793Z" stroke="#3D3D3D" stroke-width="3.4375" stroke-linecap="round"></path>
                             </svg>
-                            <div class="option_image_title">Без полей</div>
+                            <div class="option_image_title">None</div>
                         </li>
-                        <li class="option_image_item" style="margin: 8px auto">
-                            <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <li class="margin_image_item">
+                            <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin: 12px 36px 12px 36px">
                                 <rect width="55" height="55" rx="12" fill="#E5E5E5"></rect>
                                 <path d="M48.8334 32.166L42.7105 27.7575C39.5288 25.4667 35.1807 25.7035 32.2666 28.3262L23.7336 36.0059C20.8195 38.6285 16.4713 38.8653 13.2897 36.5745L7.16675 32.166M15.5001 48.8327H40.5001C45.1025 48.8327 48.8334 45.1017 48.8334 40.4993V15.4993C48.8334 10.897 45.1025 7.16602 40.5001 7.16602H15.5001C10.8977 7.16602 7.16675 10.897 7.16675 15.4993V40.4993C7.16675 45.1017 10.8977 48.8327 15.5001 48.8327ZM25.9167 20.7077C25.9167 23.5842 23.5849 25.916 20.7084 25.916C17.8319 25.916 15.5001 23.5842 15.5001 20.7077C15.5001 17.8312 17.8319 15.4993 20.7084 15.4993C23.5849 15.4993 25.9167 17.8312 25.9167 20.7077Z" stroke="#3D3D3D" stroke-width="3.8125" stroke-linecap="round"></path>
                             </svg>
-                            <div class="option_image_title">Маленькие</div>
+                            <div class="option_image_title">Small</div>
                         </li>
-                        <li class="option_image_item" style="margin: 8px auto">
-                            <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <li class="margin_image_item">
+                            <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin: 12px 36px 12px 36px">
                                 <rect width="55" height="55" rx="12" fill="#E5E5E5"></rect>
                                 <path d="M42.9168 30.583L38.3859 27.3207C36.0314 25.6255 32.8138 25.8007 30.6574 27.7415L24.343 33.4245C22.1865 35.3653 18.9689 35.5405 16.6145 33.8453L12.0835 30.583M18.2502 42.9163H36.7502C40.1559 42.9163 42.9168 40.1554 42.9168 36.7497V18.2497C42.9168 14.8439 40.1559 12.083 36.7502 12.083H18.2502C14.8444 12.083 12.0835 14.8439 12.0835 18.2497V36.7497C12.0835 40.1554 14.8444 42.9163 18.2502 42.9163ZM25.9585 22.1038C25.9585 24.2324 24.2329 25.958 22.1043 25.958C19.9757 25.958 18.2502 24.2324 18.2502 22.1038C18.2502 19.9752 19.9757 18.2497 22.1043 18.2497C24.2329 18.2497 25.9585 19.9752 25.9585 22.1038Z" stroke="#3D3D3D" stroke-width="2.82125" stroke-linecap="round"></path>
                             </svg>
-                            <div class="option_image_title">Большие</div>
+                            <div class="option_image_title">Big</div>
                         </li>
                     </ul>
                 </div>
             </div>
+            <button class="btn_convert">
+                <span>Конвертировать в PDF</span>
+            </button>
         </div>
     </div>
     <footer>

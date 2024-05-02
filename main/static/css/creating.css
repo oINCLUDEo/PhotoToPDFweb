@@ -7,25 +7,30 @@
     src: url("fonts/Geologica_Regular.ttf") format("truetype");
 }
 select{
-    background-image: url(main/static/icons/select_icon.svg);
+    background-position: right 6px center;
+    background-repeat: no-repeat;
+    background-size: 12%;
+    appearance: none;
     font-family: "Geologica Thin", "sans-serif";
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 300;
     word-wrap: break-word;
-    width: 100%;
-    padding: 8px 15.75px;
+    width: 85%;
+    height: 58px;
+    padding: 0 48px 0 24px;
+    margin-left: 24px;
     border-radius: 10px;
     border: 1px #3D3D3D solid;
     color: #3D3D3D;
+    cursor: pointer;
 }
 .option_panel_title{
     font-size: 18px;
     font-weight: 700;
-    margin: 16px 0;
+    margin: 16px 24px;
     font-family: 'Geologica Thin', sans-serif;
 }
 .work_area{
-    height: calc(100vh - 60px);
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -33,7 +38,6 @@ select{
 body{
     background: white;
     margin: 0;
-    height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -43,10 +47,21 @@ ul{
     padding: 0;
 }
 .option_image_item{
+    overflow: hidden;
     box-shadow: 0 4px 6px 3px rgba(0, 0, 0, 0.25);
-    border-radius: 55px;
-    padding: 5px 15px;
-    margin: 0 15px;
+    border-radius: 50px;
+    margin: 8px 36px;
+    flex: 1 0 auto;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+}
+.margin_image_item{
+    overflow: hidden;
+    box-shadow: 0 4px 6px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 45px;
+    margin: 8px 16px;
     flex: 1 0 auto;
     display: flex;
     position: relative;
@@ -58,46 +73,71 @@ ul{
     color: #3D3D3D;
     font-family: 'Geologica Thin', 'sans-serif';
     word-wrap: break-word;
+    font-stretch: 100%;
     font-weight: 300;
-    padding: 10px 20px;
+    padding-bottom: 24px;
+    margin: 0 auto;
     line-height: 16px;
+    width: 90px;
+    box-sizing: border-box;
 }
 .slidebar{
     position: absolute;
     right: 0;
+    padding-bottom: 180px;
     box-sizing: border-box;
-    flex-basis: 380px;
     flex-direction: column;
     display: flex;
-    border-left: 1px solid rgba(0, 0, 0, .2)
 }
 .orientation_image {
+    overflow: hidden;
     cursor: pointer;
     display: flex;
-    margin-left: -4px;
-    margin-right: -4px;
+}
+.btn_convert{
+    cursor: pointer;
+    position: absolute;
+    bottom: 36px;
+    width: 320px;
+    height: 75px;
+    right: 74px;
+    box-shadow: 0px 4.319507598876953px 10.798768043518066px 3.5995893478393555px rgba(0, 0, 0, 0.25);
+    border-radius: 39px;
+}
+.btn_convert span{
+    text-align: center;
+    color: black;
+    font-size: 26px;
+    font-family: 'Geologica Thin', 'sans-serif';
+    font-weight: 300;
+    word-wrap: break-word
 }
 #icon{
     margin: -30px 0;
 }
 .header{
-    flex: 1 0 auto;
+    flex: 0 0 auto;
 }
 .main {
-  flex: 20 auto;
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 180px);
+    overflow: hidden;
+
 }
 .telegram{
     font-size: 22px;
-    float: right;
+    float: left;
 }
 .copyright{
     float: left;
+    margin-right: 32px;
 }
 footer {
+    left: 0;
     font-family: 'Geologica Thin', sans-serif;
     padding-left: 20px;
-    padding-right: 30px;
-    padding-bottom: 15px;
 }
 hr {
     margin-left: 0;

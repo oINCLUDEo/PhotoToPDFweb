@@ -31,4 +31,5 @@ urlpatterns = [
     re_path(r'^favicon\.ico$', RedirectView.as_view(url=reverse_lazy('staticfiles_url', kwargs={'path': 'icons/favicon.ico'}), permanent=True)),
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
