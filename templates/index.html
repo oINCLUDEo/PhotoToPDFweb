@@ -15,7 +15,7 @@
         </nav>
     </header>
     <div class="main">
-        <center><h2 id="text">Конвертируйте ваши изображения в формат PDF.</h2></center>
+        <center id="text">Конвертируйте ваши изображения в формат PDF.</center>
         <form method="POST" enctype="multipart/form-data">
             {% csrf_token %}
             <input type="file" id="image-input" accept=".png, .jpg, .jpeg" multiple style="display: none;">

@@ -48,7 +48,6 @@ hr:before {
 #text{
     font-family: 'Geologica Thin', sans-serif;
     font-size: 32px;
-    color: #47474f;
     padding: 50px 0;
 }
 footer {
@@ -62,24 +61,22 @@ footer {
   text-decoration: none;
   display: inline-block;
   width: 300px;
-  height: 80px;
-  line-height: 75px;
+  align-items: center;
+    padding: 30px 0;
   border-radius: 25px;
   margin: 10px 20px;
-  font-family: 'Geologica Regular', sans-serif;
-  font-size: 16px;
-  text-transform: uppercase;
+  font-family: 'Geologica Thin', sans-serif;
+  font-size: 24px;
   text-align: center;
-  letter-spacing: 3px;
-  font-weight: 600;
-  color: #524f4e;
+  font-weight: 400;
+  color: black;
   background: white;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
-  transition: .3s;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, .25);
+  transition: .5s;
 }
 .floating-button:hover {
-  background: #bd060a;
-  box-shadow: 0 15px 20px #e5322d;
-  color: white;
-  transform: translateY(-7px);
+    background: #2E5C7D;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.25);
+    color: white;
+    transform: translateY(-5px);
 }

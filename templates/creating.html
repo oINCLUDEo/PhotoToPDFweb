@@ -15,13 +15,15 @@
         </nav>
     </header>
     <div class="main">
-        <div class="work_area" style="display: flex; justify-content: center; flex-wrap: wrap;">
+        <div class="work_area">
             <div class="pictures_area">
-                {% for uploaded_file in uploaded_files %}
-                    <div class="picture">
-                        <center><img src="{{ uploaded_file.file.url }}" width="150" alt="{{ uploaded_file.file.name }}"></center>
-                    </div>
-                {% endfor %}
+                <div class="pictures_rendered">
+                    {% for uploaded_file in uploaded_files %}
+                        <div class="picture">
+                            <center><img src="{{ uploaded_file.file.url }}" width="150" alt="{{ uploaded_file.file.name }}"></center>
+                        </div>
+                    {% endfor %}
+                </div>
             </div>
             <div class="slidebar">
                 <div class="panel_option">
@@ -77,9 +79,7 @@
                     </ul>
                 </div>
             </div>
-            <button class="btn_convert">
-                <span>Конвертировать в PDF</span>
-            </button>
+            <a class="btn_convert">Конвертировать в PDF</a>
         </div>
     </div>
     <footer>

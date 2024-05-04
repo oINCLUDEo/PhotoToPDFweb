@@ -31,14 +31,12 @@ select{
     font-family: 'Geologica Thin', sans-serif;
 }
 .work_area{
+    height: calc(100vh - 180px);
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
 }
 body{
     background: white;
     margin: 0;
-    display: flex;
     flex-direction: column;
 }
 ul{
@@ -47,6 +45,7 @@ ul{
     padding: 0;
 }
 .option_image_item{
+    cursor: pointer;
     overflow: hidden;
     box-shadow: 0 4px 6px 3px rgba(0, 0, 0, 0.25);
     border-radius: 50px;
@@ -57,7 +56,33 @@ ul{
     flex-direction: column;
     justify-content: center;
 }
+.picture{
+    cursor: move;
+    box-shadow: 0 4px 6px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    margin: 8px 12px;
+    width: 200px;
+    height: 270px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+}
+.picture:hover{
+    background: linear-gradient(360deg, rgba(84.56, 166.89, 226.51, 0) 77%, rgba(63.25, 124.84, 169.43, 0.3) 87%, rgba(10, 60, 130, 0.7) 100%);
+    border-radius: 50px
+}
+.picture center{
+    padding: 24px 5px;
+}
+.pictures_area{
+    overflow-y: auto;
+    min-width: 400px;
+    padding: 0 30px;
+    flex: 1 1;
+}
 .margin_image_item{
+    cursor: pointer;
     overflow: hidden;
     box-shadow: 0 4px 6px 3px rgba(0, 0, 0, 0.25);
     border-radius: 45px;
@@ -75,42 +100,52 @@ ul{
     word-wrap: break-word;
     font-stretch: 100%;
     font-weight: 300;
-    padding-bottom: 24px;
-    margin: 0 auto;
+    margin: 0 auto 24px auto;
     line-height: 16px;
     width: 90px;
     box-sizing: border-box;
 }
 .slidebar{
-    position: absolute;
     right: 0;
-    padding-bottom: 180px;
     box-sizing: border-box;
     flex-direction: column;
+    flex: 0 0;
     display: flex;
+    flex-basis: 480px;
+}
+.pictures_rendered{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow-y: auto;
 }
 .orientation_image {
     overflow: hidden;
-    cursor: pointer;
     display: flex;
 }
 .btn_convert{
     cursor: pointer;
-    position: absolute;
-    bottom: 36px;
+    position: fixed;
+    justify-content: center;
+    bottom: 96px;
     width: 320px;
-    height: 75px;
     right: 74px;
-    box-shadow: 0px 4.319507598876953px 10.798768043518066px 3.5995893478393555px rgba(0, 0, 0, 0.25);
+    padding: 24px 0;
+    display: flex;
+    box-shadow: 0 4px 11px 3px rgba(0, 0, 0, 0.25);
     border-radius: 39px;
-}
-.btn_convert span{
-    text-align: center;
-    color: black;
-    font-size: 26px;
+    font-size: 24px;
     font-family: 'Geologica Thin', 'sans-serif';
     font-weight: 300;
-    word-wrap: break-word
+    word-wrap: break-word;
+    transition: .5s;
+}
+.btn_convert:hover{
+    box-shadow: 0 4px 11px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 39px;
+    background: #2E5C7D;
+    color: white;
+    transform: translateY(-5px);
 }
 #icon{
     margin: -30px 0;
@@ -119,10 +154,6 @@ ul{
     flex: 0 0 auto;
 }
 .main {
-    flex: 1 0 auto;
-    display: flex;
-    flex-direction: column;
-    height: calc(100vh - 180px);
     overflow: hidden;
 
 }
